@@ -4,6 +4,7 @@ import com.ikiseh.My_Task_Management_System.payLoad.request.EmailDetails;
 import com.ikiseh.My_Task_Management_System.service.EmailService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.mail.MailProperties;
 import org.springframework.mail.MailException;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Service;
 public class EmailServiceImpl implements EmailService {
 
     private final JavaMailSender javaMailSender;
+
 
     @Value("${spring.mail.username}")
     private String senderEmail;
