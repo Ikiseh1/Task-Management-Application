@@ -23,7 +23,7 @@ public class EmailServiceImpl implements EmailService {
 
 
     @Override
-    public void sendVerificationEmail(EmailDetails emailDetails) {
+    public void sendEmail(EmailDetails emailDetails) {
 
         try{
             SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
